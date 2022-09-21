@@ -5,7 +5,7 @@ import Card from '../../../components/Card'
 import Cards from '../../../components/Cards'
 import Title from '../../../components/Title'
 
-const index = () => {
+const Subject = () => {
   const router = useRouter()
   const name = `${router.query.class}_${router.query.subject}`
 

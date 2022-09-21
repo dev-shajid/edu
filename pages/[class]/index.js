@@ -4,7 +4,7 @@ import Card from '../../components/Card'
 import Cards from '../../components/Cards'
 import Title from '../../components/Title'
 
-const index = () => {
+const Class = () => {
     const router = useRouter()
     
     if(router.query.class=='hsc'){
