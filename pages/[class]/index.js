@@ -55,7 +55,7 @@ const Class = () => {
 
 }
 
-export default index
+export default Class
 
 const hsc = [
     {

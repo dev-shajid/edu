@@ -207,7 +207,7 @@ const Subject = () => {
 
 }
 
-export default index
+export default Subject
 
 const physics1 = [
   {
