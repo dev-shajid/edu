@@ -49,6 +49,9 @@ const index = () => {
             </>
         )
     }
+    return (
+        <Title>Didnt get the class</Title>
+    )
 
 }
 
