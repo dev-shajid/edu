@@ -202,7 +202,7 @@ const index = () => {
   }
 
   return (
-    <h1 className='text-2xl font-semibold'>Didn't get the subject</h1>
+    <h1 className='text-2xl font-semibold'>Didnt get the subject</h1>
   )
 
 }
