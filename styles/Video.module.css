@@ -1,0 +1,9 @@
+.video_container{
+    grid-template-columns: 5fr 2fr;
+}
+
+@media (max-width:768px) {
+    .video_container{
+        grid-template-columns: 1fr;
+    }
+}
