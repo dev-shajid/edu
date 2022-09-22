@@ -6,7 +6,7 @@ const Nav = () => {
         <header className='flex justify-between items-center py-4'>
             <Link href='/'>
                 <a className="bg-black cursor-pointer text-white font-medium px-4 py-2 text-4xl rounded-sm md:scale-100 scale-75 origin-left">
-                    EDU
+                    EDU 
                 </a>
             </Link>
             <nav className='flex'>
