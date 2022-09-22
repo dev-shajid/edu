@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
-import ReferenceSet from 'yup/lib/util/ReferenceSet'
 import Title from '../../../../components/Title'
 
 const YOUTUBE_LINK = 'https://www.googleapis.com/youtube/v3/playlistItems'
