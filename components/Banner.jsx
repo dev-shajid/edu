@@ -3,7 +3,7 @@ import React from 'react'
 
 const Banner = () => {
     return (
-        <div className='m-auto md:flex items-center'>
+        <div className='m-auto md:flex items-center md:mt-0 mt-8'>
             <div className="left flex-[3]">
                 <div className="title mb-5 lg:text-6xl md:text-[2.9rem] xs:text-[2.9rem] text-[2rem] lg:leading-snug md:leading-tight font-semibold">
                     <span className='text-blue'>Easy To Find</span><br />
@@ -11,25 +11,26 @@ const Banner = () => {
                 </div>
                 <div className='grid grid-cols-3 xs:max-w-[380px] max-w-[100%] gap-y-4 xs:gap-x-0 gap-x-3'>
                     {
-                        items.map((item, i) => {
+                        items.map((item, i) => (
                             i == 2 ?
                                 <div key={100}></div> :
-                                <div key={item} className='bg-white py-3 px-5 rounded-md border border-stackBorder-light bg-grayd-200 flex flex-col justify-center items-center max-w-[100px]'>
-                                    <div className='max-w-[60px]'>
-                                        <Image
-                                            src={item.icon}
-                                            alt='ssc'
-                                            height={60}
-                                            width={60}
-                                            objectFit='contain'
-                                        />
-                                    </div>
-                                    <div className='font-semibold xs:text-[15px] text-[12px]'>{item.name}</div>
+                            <div key={i} className='bg-white py-3 px-5 rounded-md border border-stackBorder-light bg-grayd-200 flex flex-col justify-center items-center max-w-[100px]'>
+                                <div className='max-w-[60px]'>
+                                    <Image
+                                        src={item.icon}
+                                        alt='ssc'
+                                        height={60}
+                                        width={60}
+                                        objectFit='contain'
+                                    />
                                 </div>
+                                <div className='font-semibold xs:text-[15px] text-[12px]'>{item.name}</div>
+                            </div>
 
-                        })
+                        ))
                     }
                 </div>
+
             </div>
 
             <div className="image p-5 bg-indigoj-200 md:text-center text-center flex-[2]">

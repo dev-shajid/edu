@@ -15,13 +15,13 @@ const Subject = () => {
         <Head>
           <title>Physics 1st</title>
         </Head>
-        <div className='py-12'>
+        <div className='sm:py-12'>
           <Title>Physics 1st</Title>
           <Cards>
             {
               physics1.map((item, i) => (
                 <div key={i} className='xs:px-4 px-[5px]'>
-                  <div key={i} className='m-auto max-w-xs'>
+                  <div key={i} className='m-auto max-w-xs h-full'>
                     <Card num={item.id} name={item.name} slug={`/hsc/${router.query.subject}/${item.id}`} />
                   </div>
                 </div>
@@ -45,7 +45,7 @@ const Subject = () => {
             {
               physics2.map((item, i) => (
                 <div key={i} className='xs:px-4 px-[5px]'>
-                  <div key={i} className='m-auto max-w-xs'>
+                  <div key={i} className='m-auto max-w-xs h-full'>
                     <Card num={item.id} name={item.name} slug={`/hsc/${router.query.subject}/${item.id}`} />
                   </div>
                 </div>
@@ -69,7 +69,7 @@ const Subject = () => {
             {
               hmath1.map((item, i) => (
                 <div key={i} className='xs:px-4 px-[5px]'>
-                  <div key={i} className='m-auto max-w-xs'>
+                  <div key={i} className='m-auto max-w-xs h-full'>
                     <Card num={item.id} name={item.name} slug={`/hsc/${router.query.subject}/${item.id}`} />
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const Subject = () => {
             {
               hmath2.map((item, i) => (
                 <div key={i} className='xs:px-4 px-[5px]'>
-                  <div key={i} className='m-auto max-w-xs'>
+                  <div key={i} className='m-auto max-w-xs h-full'>
                     <Card num={item.id} name={item.name} slug={`/hsc/${router.query.subject}/${item.id}`} />
                   </div>
                 </div>
@@ -117,7 +117,7 @@ const Subject = () => {
             {
               chemestry1.map((item, i) => (
                 <div key={i} className='xs:px-4 px-[5px]'>
-                  <div key={i} className='m-auto max-w-xs'>
+                  <div key={i} className='m-auto max-w-xs h-full'>
                     <Card num={item.id} name={item.name} slug={`/hsc/${router.query.subject}/${item.id}`} />
                   </div>
                 </div>
@@ -141,7 +141,7 @@ const Subject = () => {
             {
               chemestry2.map((item, i) => (
                 <div key={i} className='xs:px-4 px-[5px]'>
-                  <div key={i} className='m-auto max-w-xs'>
+                  <div key={i} className='m-auto max-w-xs h-full'>
                     <Card num={item.id} name={item.name} slug={`/hsc/${router.query.subject}/${item.id}`} />
                   </div>
                 </div>
@@ -165,7 +165,7 @@ const Subject = () => {
             {
               biology1.map((item, i) => (
                 <div key={i} className='xs:px-4 px-[5px]'>
-                  <div key={i} className='m-auto max-w-xs'>
+                  <div key={i} className='m-auto max-w-xs h-full'>
                     <Card num={item.id} name={item.name} slug={`/hsc/${router.query.subject}/${item.id}`} />
                   </div>
                 </div>
@@ -189,7 +189,7 @@ const Subject = () => {
             {
               biology2.map((item, i) => (
                 <div key={i} className='xs:px-4 px-[5px]'>
-                  <div key={i} className='m-auto max-w-xs'>
+                  <div key={i} className='m-auto max-w-xs h-full'>
                     <Card num={item.id} name={item.name} slug={`/hsc/${router.query.subject}/${item.id}`} />
                   </div>
                 </div>

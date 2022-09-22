@@ -17,7 +17,7 @@ const Class = () => {
                         {
                             hsc.map((sub, i) => (
                                 <div key={i} className='xs:px-4 px-[5px]'>
-                                    <div key={i} className='m-auto max-w-xs'>
+                                    <div key={i} className='m-auto max-w-xs h-full'>
                                         <Card logo={sub.img} name={sub.name} slug={sub.slug} />
                                     </div>
                                 </div>
@@ -38,7 +38,7 @@ const Class = () => {
                         {
                             ssc.map((sub, i) => (
                                 <div key={i} className='xs:px-4 px-[5px]'>
-                                    <div key={i} className='m-auto max-w-xs'>
+                                    <div key={i} className='m-auto max-w-xs h-full'>
                                         <Card logo={sub.img} name={sub.name} slug={sub.slug} />
                                     </div>
                                 </div>
