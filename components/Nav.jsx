@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import {BsFillMoonFill} from 'react-icons/bs';
 
 const Nav = () => {
     return (
@@ -10,12 +11,12 @@ const Nav = () => {
                 </a>
             </Link>
             <nav className='flex'>
+                <div className="item ml-12 font-medium text-[18px] cursor-pointer"><Link href='/'>Home</Link></div>
                 <div className="item ml-12 font-medium text-[18px] cursor-pointer"><Link href='/hsc'>HSC</Link></div>
-                <div className="item ml-12 font-medium text-[18px] cursor-pointer sm:block hidden"><Link href='/hsc'>Admission</Link></div>
                 <div className="item ml-12 font-medium text-[18px] cursor-pointer sm:block hidden"><Link href='/ssc'>SSC</Link></div>
                 <div className="item ml-12 font-medium text-[18px] cursor-pointer sm:block hidden"><Link href='/contact'>Contact</Link></div>
-                <div className="item ml-12 font-medium text-[18px] cursor-pointer sm:block hidden">
-                    Dark
+                <div className="item ml-12 font-medium text-[18px] cursor-pointer sm:flex items-center">
+                    <BsFillMoonFill/>
                 </div>
             </nav>
         </header>

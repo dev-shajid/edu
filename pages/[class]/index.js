@@ -80,13 +80,13 @@ const hsc = [
     },
     {
         img: '/images/c1.png',
-        name: 'Chemestry 1st',
-        slug: '/hsc/chemestry1',
+        name: 'Chemistry 1st',
+        slug: '/hsc/chemistry1',
     },
     {
         img: '/images/c2.png',
-        name: 'Chemestry 2nd',
-        slug: '/hsc/chemestry2',
+        name: 'Chemistry 2nd',
+        slug: '/hsc/chemistry2',
     },
     {
         img: '/images/b1.png',
@@ -143,8 +143,8 @@ const ssc = [
     },
     {
         img: '/images/c1.png',
-        name: 'Chemestry',
-        slug: '/ssc/chemestry',
+        name: 'Chemistry',
+        slug: '/ssc/chemistry',
     },
     {
         img: '/images/b1.png',
