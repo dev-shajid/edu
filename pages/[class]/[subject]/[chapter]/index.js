@@ -92,4 +92,4 @@ export const getServerSideProps = async (ctx) => {
   return {
     props: { data: data.message }
   }
-}
+} 
