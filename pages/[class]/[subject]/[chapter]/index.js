@@ -15,7 +15,7 @@ const Chapter = ({data}) => {
         <title>Physics 1st</title>
       </Head>
       {/* Basic */}
-      {courses.basic[0] && <div className='sm:pt-8 pt-4 my-4'>
+      {courses.basic[0] && <div className=''>
         <Title>Basic</Title>
         <Cards thumb={true}>
           {
@@ -35,7 +35,7 @@ const Chapter = ({data}) => {
         </Cards>
       </div>}
       {/* Advanced */}
-      {courses.advanced[0] && <div className='sm:pt-8 pt-4 my-4'>
+      {courses.advanced[0] && <div className=''>
         <Title>Advanced</Title>
         <Cards thumb={true}>
           {
@@ -55,7 +55,7 @@ const Chapter = ({data}) => {
         </Cards>
       </div>}
       {/* Admission */}
-      {courses.admission[0] && <div className='sm:pt-8 pt-4 my-4'>
+      {courses.admission[0] && <div className=''>
         <Title>Admission</Title>
         <Cards thumb={true}>
           {
@@ -76,7 +76,7 @@ const Chapter = ({data}) => {
       </div>}
       {/* No Course */}
       {!courses.basic[0] && !courses.advanced[0] && !courses.admission[0] && 
-      <div className='sm:pt-8 pt-4 my-4'>
+      <div className=''>
         <Title>No Course is Found ! 🙁</Title>
       </div>}
     </>

@@ -11,7 +11,7 @@ const Class = () => {
         
         return (
             <>
-                <div className='py-12'>
+                <div className=''>
                     <Title>Your Subjects</Title>
                     <Cards>
                         {
@@ -32,7 +32,7 @@ const Class = () => {
     if(router.query.class=='ssc'){
         return (
             <>
-                <div className='py-12'>
+                <div className=''>
                     <Title>Your Subjects</Title>
                     <Cards>
                         {

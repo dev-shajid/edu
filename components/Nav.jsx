@@ -11,7 +11,7 @@ const Nav = () => {
     console.log(router.route);
     return (
         <>
-            <header className='flex justify-between items-center py-4 lg:px-0 px-1'>
+            <header className='flex justify-between items-center sm:py-4 py-2 lg:px-0 px-1'>
                 <Link href='/'>
                     <a className="bg-black cursor-pointer text-white font-medium px-4 py-2 text-4xl rounded-sm md:scale-100 scale-75 origin-left">
                         EDU
@@ -59,7 +59,7 @@ const Nav = () => {
                     </div>
                 </div>
             </header>
-            <div className={`my-4 ${router.route == '/' && 'hidden'}`}>
+            <div className={`${router.route == '/'?'hidden':''}`}>
                 <AiOutlineLeft onClick={() => router.back()} className='text-3xl cursor-pointer' />
             </div>
         </>

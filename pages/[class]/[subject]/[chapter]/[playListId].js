@@ -22,7 +22,7 @@ const Video = ({ data }) => {
             <Head>
                 <title>{data?.items[classId]?.snippet?.title}</title>
             </Head>
-            <div className='video_container flex lg:flex-row flex-col'>
+            <div className='video_container flex lg:flex-row flex-col mt-2'>
                 <div className='video w-full aspect-video lg:flex-[5] rounded-sm overflow-hidden'>
                     <iframe width="100%" height="100%" src={`https://www.youtube.com/embed/${data.items[classId].snippet.resourceId.videoId}?autoplay=1`} title={'hello'} frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
