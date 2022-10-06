@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
-import Video from '../../../../components/Video'
+// import Video from '../../../../components/Video'
 
 const YOUTUBE_LINK = 'https://www.googleapis.com/youtube/v3/playlistItems'
 
@@ -25,8 +25,8 @@ const Videos = ({ data }) => {
             </Head>
             <div className='video_container flex lg:flex-row flex-col mt-2'>
                 <div className='video w-full aspect-video lg:flex-[5] rounded-sm overflow-hidden'>
-                    {/* <iframe width="100%" height="100%" src={`https://www.youtube.com/embed/${data.items[classId].snippet.resourceId.videoId}?autoplay=1`} title={'hello'} frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
-                    <Video id={data.items[classId].snippet.resourceId.videoId}/>
+                    <iframe width="100%" height="100%" src={`https://www.youtube.com/embed/${data.items[classId].snippet.resourceId.videoId}?autoplay=1`} title={'hello'} frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    {/* <Video id={data.items[classId].snippet.resourceId.videoId}/> */}
                 </div>
                 <div className='list border bg-white border-gray-300 w-full lg:ml-4 lg:my-0 my-4 lg:flex-[2] flex-1 rounded-sm overflow-auto'>
                     {
