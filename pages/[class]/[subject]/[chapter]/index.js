@@ -8,11 +8,11 @@ import Title from '../../../../components/Title'
 const Chapter = ({data}) => {
   const router = useRouter()
   const [courses, setCourses] = useState({basic: data.filter(e=>e.category=='Basic'), advanced: data.filter(e=>e.category=='Advanced'), admission: data.filter(e=>e.category=='Admission'), })
-
+  console.log(router);
   return (
     <>
       <Head>
-        <title>Physics 1st</title>
+        <title>Chapter-{router.query.chapter}</title>
       </Head>
       {/* Basic */}
       {courses.basic[0] && <div className=''>
@@ -35,7 +35,7 @@ const Chapter = ({data}) => {
         </Cards>
       </div>}
       {/* Advanced */}
-      {courses.advanced[0] && <div className=''>
+      {courses.advanced[0] && <div className='mt-12'>
         <Title>Advanced</Title>
         <Cards thumb={true}>
           {
@@ -55,7 +55,7 @@ const Chapter = ({data}) => {
         </Cards>
       </div>}
       {/* Admission */}
-      {courses.admission[0] && <div className=''>
+      {courses.admission[0] && <div className='mt-12'>
         <Title>Admission</Title>
         <Cards thumb={true}>
           {

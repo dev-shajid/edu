@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 
 const Nav = () => {
     const router = useRouter()
-    console.log(router.route);
+    
     return (
         <>
             <header className='flex justify-between items-center sm:py-4 py-2 lg:px-0 px-1'>
