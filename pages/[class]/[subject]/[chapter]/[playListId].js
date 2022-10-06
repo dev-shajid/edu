@@ -26,7 +26,7 @@ const Video = ({ data }) => {
                 <div className='video w-full aspect-video lg:flex-[5] rounded-sm overflow-hidden'>
                     <iframe width="100%" height="100%" src={`https://www.youtube.com/embed/${data.items[classId].snippet.resourceId.videoId}?autoplay=1`} title={'hello'} frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
-                <div className='list border bg-white border-gray-300 w-full lg:ml-4 max-h-[500px] h-full lg:my-0 my-4 lg:flex-[2] flex-1 rounded-sm overflow-auto'>
+                <div className='list border bg-white border-gray-300 w-full lg:ml-4 lg:my-0 my-4 lg:flex-[2] flex-1 rounded-sm overflow-auto'>
                     {
                         data.items.map((course, i) => (
                             <Link key={i} href={`/${router.query.class}/${router.query.subject}/${router.query.chapter}/${router.query.playListId}?id=${i}`}>

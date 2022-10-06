@@ -40,7 +40,7 @@ img {
 
 @media (min-width:1023px) {
   .video_container .list{
-    aspect-ratio: 353/494;
+    aspect-ratio: 430/604.5;
   }
 }
 
@@ -49,6 +49,38 @@ img {
     height: calc(100vh - 100px) !important;
     overflow: hidden;
     height: 100%;
+  }
+}
+
+@media (max-width:639px) {
+  .mobile_nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 -2px 6px #00000010;
+    z-index: 9999;
+    padding: 8px 0;
+  }
+
+  .item{
+    width: 25%;
+    margin: 0;
+    text-align: center
+  }
+
+  .item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size:14px;
+    font-weight: 400;;
+  }
+
+  .item a svg{
+    font-size: 1.5rem
   }
 }
 
