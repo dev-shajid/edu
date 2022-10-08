@@ -105,17 +105,17 @@ const Subject = () => {
     )
   }
 
-  if (router.query.subject == 'chemestry1') {
+  if (router.query.subject == 'chemistry1') {
     return (
       <>
         <Head>
-          <title>Chemestry 1st</title>
+          <title>Chemistry 1st</title>
         </Head>
         <div className='py-12'>
-          <Title>Chemestry 1st</Title>
+          <Title>Chemistry 1st</Title>
           <Cards>
             {
-              chemestry1.map((item, i) => (
+              chemistry1.map((item, i) => (
                 <div key={i} className='xs:px-4 px-[5px]'>
                   <div key={i} className='m-auto max-w-xs h-full'>
                     <Card num={item.id} name={item.name} slug={`/hsc/${router.query.subject}/${item.id}`} />
@@ -129,17 +129,17 @@ const Subject = () => {
     )
   }
 
-  if (router.query.subject == 'chemestry2') {
+  if (router.query.subject == 'chemistry2') {
     return (
       <>
         <Head>
-          <title>Chemestry 2nd</title>
+          <title>Chemistry 2nd</title>
         </Head>
         <div className='py-12'>
-          <Title>Chemestry 2nd</Title>
+          <Title>Chemistry 2nd</Title>
           <Cards>
             {
-              chemestry2.map((item, i) => (
+              chemistry2.map((item, i) => (
                 <div key={i} className='xs:px-4 px-[5px]'>
                   <div key={i} className='m-auto max-w-xs h-full'>
                     <Card num={item.id} name={item.name} slug={`/hsc/${router.query.subject}/${item.id}`} />
@@ -487,7 +487,7 @@ const biology2 = [
   },
 ]
 
-const chemestry1 = [
+const chemistry1 = [
   {
     id: 1,
     name: 'ল্যাবরেটরির নিরাপদ ব্যবহার',
@@ -510,7 +510,7 @@ const chemestry1 = [
   },
 ]
 
-const chemestry2 = [
+const chemistry2 = [
   {
     id: 1,
     name: 'পরিবেশ রসায়ন',
