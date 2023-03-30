@@ -5,7 +5,7 @@ import Card from '../../../../components/Card'
 import Cards from '../../../../components/Cards'
 import Title from '../../../../components/Title'
 
-export const SERVER = "shajid-edu.vercel.app"
+export const SERVER = "https://shajid-edu.vercel.app"
 // export const SERVER = "http://localhost:3000"
 
 const Chapter = ({data}) => {
