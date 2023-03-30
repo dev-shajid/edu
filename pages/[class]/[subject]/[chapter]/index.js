@@ -5,6 +5,9 @@ import Card from '../../../../components/Card'
 import Cards from '../../../../components/Cards'
 import Title from '../../../../components/Title'
 
+export const SERVER = "shajid-edu.vercel.app"
+// export const SERVER = "http://localhost:3000"
+
 const Chapter = ({data}) => {
   const router = useRouter()
   const [courses, setCourses] = useState({basic: data.filter(e=>e.category=='Basic'), advanced: data.filter(e=>e.category=='Advanced'), admission: data.filter(e=>e.category=='Admission'), })
@@ -86,7 +89,7 @@ const Chapter = ({data}) => {
 export default Chapter
 
 export const getServerSideProps = async (ctx) => {
-  const res = await fetch(`https://shajid-edu-admin.vercel.app/api/course?class=${ctx.query.class}&subject=${ctx.query.subject}&chapter=${ctx.query.chapter}`)
+  const res = await fetch(`${SERVER}/api/course?class=${ctx.query.class}&subject=${ctx.query.subject}&chapter=${ctx.query.chapter}`)
   const data = await res.json()
 
   return {

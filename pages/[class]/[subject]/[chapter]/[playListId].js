@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 // import Video from '../../../../components/Video'
 
 const YOUTUBE_LINK = 'https://www.googleapis.com/youtube/v3/playlistItems'
@@ -17,6 +17,10 @@ export const getServerSideProps = async (ctx) => {
 const Videos = ({ data }) => {
     const router = useRouter()
     const [classId, setClass] = useState(router.query.id || 0)
+
+    useEffect(()=>{
+        setClass(router.query.id)
+    },[router.query.id])
 
     return (
         <>
