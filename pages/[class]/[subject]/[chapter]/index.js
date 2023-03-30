@@ -11,7 +11,7 @@ export const SERVER = "https://shajid-edu.vercel.app"
 const Chapter = ({data}) => {
   const router = useRouter()
   const [courses, setCourses] = useState({basic: data.filter(e=>e.category=='Basic'), advanced: data.filter(e=>e.category=='Advanced'), admission: data.filter(e=>e.category=='Admission'), })
-  console.log(router);
+  // console.log(router);
   return (
     <>
       <Head>
@@ -91,6 +91,7 @@ export default Chapter
 export const getServerSideProps = async (ctx) => {
   const res = await fetch(`${SERVER}/api/course?class=${ctx.query.class}&subject=${ctx.query.subject}&chapter=${ctx.query.chapter}`)
   const data = await res.json()
+  console.log({res});
 
   return {
     props: { data: data.message }
