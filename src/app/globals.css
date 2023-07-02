@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f8ff;
+}
+
+@media screen and (max-width:639px) {
+  .mobile_nav {
+    @apply bg-white border border-gray-300 rounded-sm py-2 w-full justify-evenly fixed bottom-0 left-[50%] translate-x-[-50%];
+  }
+}

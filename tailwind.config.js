@@ -1,45 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,jsx,ts,tsx}",
-    "./components/**/*.{js,jsx,ts,tsx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
-        blue:{
-          light:'#4666F6',
-          dark:'#4666F6',
-          DEFAULT: '#4666F6'
-        },
-        primary: {
-          DEFAULT: '#f3f4f6',
-          light: {
-            DEFAULT: '#f6faff',
-            1: '#eaf0f7',
-            2: '#f6faff',
-          },
-          dark: {
-            DEFAULT: '#0e1325',
-            1: '#0a1127',
-            2: '#161c35',
-          }
-        },
-        stackBorder: {
-          light: '#00000025',
-          dark: '#ffffff25',
-          DEFAULT: '#00000025'
-        }
+        blue: '#4666F6',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
-    screens: {
-      'xs': '480px',
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
-    }
   },
   plugins: [],
 }
