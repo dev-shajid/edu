@@ -17,3 +17,11 @@ body {
     @apply bg-white border border-gray-300 rounded-sm py-2 w-full justify-evenly fixed bottom-0 left-[50%] translate-x-[-50%];
   }
 }
+
+.animation-pulse {
+  animation-duration: 1s;
+}
+
+#nprogress .bar {
+  background: #7659ff !important;
+}

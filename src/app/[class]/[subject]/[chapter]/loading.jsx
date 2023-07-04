@@ -17,4 +17,4 @@ export default function loading() {
     )
 }
 
-const SkeletonLoading = ({ className }) => <div className={`bg-gray-200 border border-gray-300 w-[140px] h-[30px] rounded-md animate-pulse text-center ${className}`} />
+export const SkeletonLoading = ({ className }) => <div className={`bg-gray-200 border border-gray-300 w-[140px] h-[30px] rounded-md animate-pulse text-center ${className}`} />

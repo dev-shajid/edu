@@ -3,8 +3,9 @@
 import { Card, Cards, Title } from '@/components/Basic'
 import Link from 'next/link'
 import React from 'react'
+import { SkeletonLoading } from './[subject]/[chapter]/loading'
 
-export default function page({params}) {
+export default function page({ params }) {
 
     if (params.class != 'hsc' && params.class != 'ssc') return <Title>Didnt get the class</Title>
 
